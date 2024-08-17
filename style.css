@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: auto;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.background {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.time-message {
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.shortcuts {
+    display: flex;
+    flex: 1;
+    gap: 50px;
+}
+
+.youtube {
+    fill: red;
+}
+
+.mail-box {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    width: 60px;
+    height: 60px;
+    transition: scale 400ms;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.mail-box:hover {
+    scale: 1.2;
+}
+
+.customSlider {
+    animation: backgroundSlider 14400s linear both infinite;
+}
+
+
+
+/* Background page 1 editing */
+
+#background-1 {
+    
+    
+
+    .time-message {
+        position: absolute;
+        top: 20%;
+        left: 22%;
+        letter-spacing: 30px;
+        font-size: 72px;
+        font-weight: bold;
+    }
+}
+
+#background-1 .shortcuts {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 10%;
+    left: 20%;
+    height: 40px;
+}
+
+.item {
+    background-color: #cdc9c94a;
+    backdrop-filter: blur(4px);
+    border-radius: 20px;
+    box-shadow: inset 0 5px 4px 10px #d2cfcf93;
+    box-shadow: inset 0 -5px 4px 10px #605e5e75;
+    width: 120px;
+    height: 120px;
+    padding: 30px;
+    transition: scale 400ms;
+}
+
+#background-1 .item:hover {
+    scale: 1.2;
+}
+
+#background-1 .shortcuts a {
+    width: auto;
+    height: 80%;
+    text-decoration: none;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#background-1 .shortcuts a:hover {
+    background-color: #ffffff8e;
+    border-radius: 30px;
+    color: black;
+    box-shadow: 0 0 4px 4px #ffffff8e;
+}
+
+
+
+/* Background page 2 editing */
+
+
+#background-2 {
+    background: url(./images/lotr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+/* Background page 2 editing */
+
+
+#background-3 {
+    background: url(./images/spider-man-listening-to-music-ue-2560x1700.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+/* Background page 2 editing */
+
+
+#background-4 {
+    background: url(./images/ta\ prom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+
+/* Background page 2 editing */
+
+
+
+@keyframes backgroundSlider {
+    0%,20%{
+        background: url(./images/hp.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        object-fit: cover;
+        color: aliceblue;
+        font-family: "Grey Qo", cursive;
+    }
+    21%,40%{
+        background: url(./images/lotr.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        object-fit: cover;
+        object-position: bottom;
+        color: aliceblue;
+        font-family: "Sankofa Display", sans-serif;
+    }
+
+    41%,60%{
+        background: url(./images/spider-man-listening-to-music-ue-2560x1700.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        object-fit: cover;
+        color: rgb(33, 78, 118);
+        font-family: "Matemasie", sans-serif;
+    }
+
+    61%,80%{
+        background: url(./images/ta\ prom.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        object-fit: cover;
+        color: rgb(140, 10, 10);
+        font-family: "Roboto Mono", monospace;
+    }
+
+    81%,100%{
+        background: url(./images/zanzibar.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100%;
+        color: rgb(58, 58, 58);
+        object-fit: cover;
+    }
+}
+
