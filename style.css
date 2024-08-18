@@ -27,7 +27,7 @@ body, html {
 .time-message {
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 3%;
 }
 
 .shortcuts {
@@ -58,10 +58,48 @@ body, html {
 }
 
 .customSlider {
-    animation: backgroundSlider 14400s linear both infinite;
+    animation: backgroundSlider 30s linear both infinite;
 }
 
+.others {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100vh;
+    flex: 1;
+    gap: 30px;
+}
 
+.other-items {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    
+}
+
+.other-items:hover {
+    scale: 1.2;
+}
+
+.drive {
+    top: 13%;
+    right: 5%;
+
+    path{
+        fill: #4cdb5d8e;
+    }
+}
+
+.telegram {
+    
+    top: 21%;
+    right: 5%;
+
+    path {
+        fill: #2a8dae;
+    }
+}
 
 /* Background page 1 editing */
 
@@ -72,8 +110,8 @@ body, html {
     .time-message {
         position: absolute;
         top: 20%;
-        left: 22%;
-        letter-spacing: 30px;
+        left: 20%;
+        letter-spacing: 10px;
         font-size: 72px;
         font-weight: bold;
     }
@@ -182,6 +220,7 @@ body, html {
         object-fit: cover;
         color: aliceblue;
         font-family: "Grey Qo", cursive;
+        letter-spacing: 30px;
     }
     21%,40%{
         background: url(./images/lotr.jpg);
